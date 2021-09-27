@@ -1,0 +1,67 @@
+from graph import *
+
+
+penColor(51, 255, 255)
+brushColor(51, 255, 255)
+rectangle(0, 0, 500, 200)
+penColor(51, 51, 205)
+brushColor(51, 51, 205)
+rectangle(0, 200, 500, 300)
+penColor(204, 255, 0)
+brushColor(204, 255, 0)
+rectangle(0, 300, 500, 450)
+windowSize(500, 450)
+penColor('yellow')
+brushColor('yellow')
+circle(400, 80, 40)
+penColor('blue')
+brushColor('white')
+for i in range (30, 120, 30):
+    circle(60+i, 50, 20)
+circle(170, 70, 20)
+for i in range (30, 120, 30):
+    circle(50+i, 70, 20)
+brushColor('brown')
+rectangle(270, 225, 450, 260)
+penColor('brown')
+circle(270, 225, 34)
+penColor(51, 51, 205)
+brushColor(51, 51, 205)
+rectangle(200, 200, 500, 225)
+penColor(51, 255, 255)
+brushColor(51, 255, 255)
+rectangle(200, 199, 500, 150)
+penSize(40)
+penColor(51, 51, 205)
+line(410, 280, 460, 225)
+penColor('black')
+penSize(5)
+line(320, 226, 320, 100)
+penSize(2)
+penColor('black')
+brushColor('white')
+polygon([(320, 100), (380, 160),
+        (340, 160), (320, 100)])
+polygon([(320, 220), (380, 160),
+         (340, 160), (320, 220)])
+penSize(4)
+circle(400, 240, 7)
+penSize(6)
+penColor('brown')
+line(80, 400, 80, 260)
+penColor(255, 51, 102)
+brushColor(255, 51, 102)
+penSize(2)
+polygon([(20,290), (77, 260), (83, 260), (140, 290)])
+penSize(1)
+penColor('blue')
+rectangle(77, 259, 83, 290)
+penColor('black')
+for i in range (20, 77, 15):
+    line(77, 260, i, 290)
+for i in range (83, 140, 15):
+    line(83, 260, i, 290)
+
+
+
+run()
