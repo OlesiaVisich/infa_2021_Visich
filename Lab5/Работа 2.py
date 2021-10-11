@@ -13,10 +13,11 @@ colors = ['red']
 x = rnd(100,700)
 y = rnd(100,500)
 r = rnd(30,50)
-a=2
-b=2
+a=5
+b=5
+job=None
 def move():
-    global x,y,a,b
+    global x,y,a,b,job
     canv.delete(ALL)
     if x>=15 and x<=680 and y>=15 and y<=480:
         x=x+a
@@ -42,10 +43,13 @@ def move():
         y=y+b
         #y=479
     canv.create_oval(x-r, y-r, x+r, y+r, fill=choice(colors), width=0)
-    root.after(100, move)
+    job=root.after(100, move)
     
 def new_ball():
-    global x,y,r,a,b
+    global x,y,r,a,b,job
+    if job:
+        root.after_cancel(job)
+        job=None
     x=rnd(100,500)
     y=rnd(100,400)
     #a=rnd(-5,5)
