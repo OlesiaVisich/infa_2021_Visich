@@ -208,8 +208,10 @@ def new_game(event=''):
     col='yellow'
     while (t1.live or balls) and count:
         #print ('YES')
-        t1.move(1.098)
-        t2.move(-0.74)
+        a=(rnd(-2, 2))/10
+        b=(rnd(-2, 2))/10
+        t1.move(a)
+        t2.move(b)
         for b in balls:
             #print('DA', len(balls))
             b.move()
